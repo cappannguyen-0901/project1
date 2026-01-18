@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Be+Vietnam+Pro:wght@400;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+#main-header {
+    background-color: #cccaca;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-logo { height: 80px; width: auto; }
+
+.header-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.header-text span {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+.navigation_menu {
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigation_menu a {
+    color: #d4af37;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.navigation_menu a:hover { background-color: #444; }
+
+#main-content { padding: 30px 0; }
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 200px;
+    background: #fdf8ef;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #e0d5c0;
+}
+
+.stat-card h3 { color: #8B0000; font-size: 2rem; margin-bottom: 5px; }
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 20px 0;
+}
+.artifact-row {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.artifact-card {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.artifact-card {
+    width: calc(50% - 10px);
+    min-width: 300px;
+    max-width: 450px;
+}
+
+.artifact-image {
+    width: 100%;
+    height: 250px;
+    background-color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.artifact-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.artifact-info {
+    padding: 20px;
+    text-align: left;
+}
+.artifact-info h4 {
+    color: #8B0000;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+.artifact-info p {
+    color: #555;
+    text-align: justify;
+    margin: 0;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #a0a0a0;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 5px solid #8B0000;
+}
+
+footer p { margin-bottom: 5px; font-size: 14px; }
+
+
+.form-group { margin-bottom: 15px; }
+input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px; }
+.btn-submit {
+    background-color: #8B0000;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
